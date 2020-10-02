@@ -1,0 +1,308 @@
+body{
+	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+.wrap{
+  position: relative;
+}
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+.header{
+  position: fixed;  /* position 고정 */
+  top: 0; left: 0; right: 0; /* 상단 위치 */
+  line-height: 66px;
+  background-color: rgba(64, 64, 64, 0.75);
+  z-index: 10;
+  width: 100%;
+}
+.logo{
+  margin-left: 130px;
+}
+.top{
+  position: fixed;
+  bottom:180px;
+  right:0;
+  z-index: 10;
+}
+.content_1{
+  background: url('../image/section_invite.jpg') no-repeat 0 0;
+  height: 750px;
+  background-position: center center;
+  background-color: #fff;
+}
+.content_2{
+  background: url('../image/section_creator.jpg') no-repeat 0 0;
+  height: 822px;
+  background-position: center center;
+  background-color: #f9939d;
+}
+.content_3{
+  background: url('../image/section_store.jpg') no-repeat 0 0;
+  height: 1084px;
+  background-position: center center;
+  background-color: #d5e43f;
+}
+.content_4{
+  position: relative;
+  width: 100%;
+  height: 1030px;
+  background-color: #b893f9;
+  background-image: url(../image/section_recipe.png),
+                    url(../image/pattern_recipe.png);
+  background-size: 980px 681px, 550px 185px;
+  background-repeat: no-repeat, repeat-x;
+  background-position: center 31%, center center;
+}
+.content_5{
+  background-color: #fff;
+}
+.footer{
+  background-color: #e0e4eb;
+  font-size: 18px;
+  color: #70757d;
+  line-height: 80px;
+  text-align: center;
+}
+.thumbnail_wrap{
+  padding-top: 300px;
+  width:100%;
+  margin: 0 auto;
+}
+.thumbnail_content{
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.thumbnail_content a{
+  display: block;
+  height: 230px;
+  width: 230px;
+}
+.thumbnail_li li{
+  float: left;
+}
+.thumbnail_li:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.thumbnail_li li + li{
+  margin-left: 20px;
+}
+.thumbnail_li li:nth-child(4n+1) {
+    margin-left: 0;
+}
+.thumb{
+  position: relative;
+}
+.sale{
+  color: #fff;
+  font-weight: bold;
+  font-size: 65px;
+  margin: 60px auto 10px;
+}
+.time{
+  color: #fff;
+  font-size: 20px;
+}
+.hover_wrap{
+  position: relative;
+}
+.thumb_hover{
+   display: none;
+   position: absolute;
+   border-radius: 10px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 230px;
+   height: 230px;
+   background: rgba(96, 132, 2, 0.9);
+   z-index: 10;
+   text-align: center;
+ }
+ .hover_wrap:hover .thumb_hover{
+   display: block;
+ }
+ .thumb img{
+   border-radius: 10px;
+ }
+ .thumb_title{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   font-size: 20px;
+   padding: 30px 10px 10px 10px;
+   color: #1b1d21;
+   text-align: center;
+ }
+.thumb_text{
+  width: 230px;
+  height: 140px;
+  text-align: center;
+}
+.num{
+  font-size: 28px;
+  font-weight: bold;
+}
+.won{
+  font-size: 20px;
+  color: #1b1d21;
+}
+.recipe_wrap{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align:center;
+}
+.recipe1{
+  display: inline-block;
+  width:480px;
+  height: 482px;
+  margin-right: 6px;
+}
+.recipe2{
+  display: inline-block;
+  width:480px;
+  height: 482px;
+  margin-left: 6px;
+}
+.recipe1 a, .recipe2 a{
+  display: block;
+  height: 482px;
+}
+.go_recipe_wrap{
+  width: 100%;
+  height: 91px;
+  margin-top: 65px;
+  text-align: center;
+}
+.go_recipe_wrap a{
+  display: inline-block;
+}
+.go_recipe{
+  position: relative;
+}
+.go_recipe_over{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 310px;
+  height: 91px;
+}
+.go_recipe_wrap a:hover .go_recipe_over{
+  display: block;
+}
+.faq_li{
+  margin-bottom: 100px;
+  text-align: center;
+}
+.content_5title{
+  margin-top: 90px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.faq_wrap{
+  width: 980px;
+  margin: 0 auto;
+  border-bottom: 1px solid #a1a5ad;
+}
+.question{
+  font-weight: bold;
+  font-size: 20px;
+  color: #1d1b21;
+  width: 840px;
+  margin: 0 auto;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.question_wrap{
+  position: relative;
+  line-height: 28px;
+  border-top: 1px solid #a1a5ad;
+  text-align: left;
+}
+.faq_wrap label{
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+}
+.icon_question{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  display: block;
+  padding-top:22px;
+  padding-left: 25px;
+}
+.recipe_a{
+  position: relative;
+  display: none;
+  font-size:16px;
+  background-color: #f7f8fa;
+  color: #60656e;
+  padding: 20px 70px;
+}
+.icon_answer{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  display: block;
+  padding-top:22px;
+  padding-left: 25px;
+}
+.faq_wrap input:checked ~ .recipe_a{
+  display: block;
+}
+input{
+  position: absolute;
+  overflow:hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+input + label{
+  background: url('../image/icon_arrow_down.gif') no-repeat 0 0;
+  width: 46px;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: transparent;
+  padding: 0;
+  background-position: 0% 30%;
+}
+input:checked + label {
+  background: url('../image/icon_arrow_up.gif') no-repeat 0 0;
+  width: 46px;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  color: transparent;
+  padding: 0;
+  background-position: 0% 20%;
+}
+.footer span{
+  font-weight: bold;
+}
+@media screen and (min-width: 1920px){
+.content_1{background-color: #fff;}
+.content_2{background-color: #f9939d;}
+.content_3{background-color: #d5e43f;}
+.content_4{background-color: #b893f9;}
+.content_5{background-color: #fff;}
+}
